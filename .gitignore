@@ -8,6 +8,7 @@
 .env
 .env.backup
 .env.production
+.env.testing
 Homestead.json
 Homestead.yaml
 auth.json
@@ -16,3 +17,24 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+
+# Docker 相關
+/docker/mysql/data
+*.log
+.docker-sync
+docker-compose.override.yml
+
+# 系統相關
+.DS_Store
+Thumbs.db
+
+# 快取相關
+*.cache
+.php_cs.cache
+.phpunit.result.cache
+
+# IDE 相關
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo

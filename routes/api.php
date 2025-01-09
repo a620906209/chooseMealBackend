@@ -20,3 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/餐廳/搜尋', [RestaurantController::class, 'searchRestaurantsInArea']);
+
+Route::get('/', function () {
+    return 'test';
+});
